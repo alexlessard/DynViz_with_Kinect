@@ -1,0 +1,9 @@
+To install the kinect and the needed simpleopenni libraries in processing follow this great tutorial here: http://code.google.com/p/simple-openni/wiki/Installation
+
+The versions which worked on our systems perfectly were:
+OpenNi 1.1.0.41 
+NITE 1.3.1.3 
+PrimeSensor 5.0.1.31 
+PrimeSense Drivers 3.1.2.0
+
+To setup processing and dynviz follow the SetupProcessingAndDynViz.doc included
