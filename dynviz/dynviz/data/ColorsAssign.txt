@@ -1,0 +1,161 @@
+d9ac4f	Afghanistan
+4e7bda	Albania
+d0aaa4	Algeria
+cfa5c9	Angola
+bcb8bb	Antarctica
+43f17b	Argentina
+d9d94f	Armenia
+ce6259	Australia
+dbad59	Austria
+d9c84f	Azerbaijan
+4e66da	Bangladesh
+ee4692	Belgium
+f9fe36	Belize
+a4d0d0	Benin
+a4d0c6	Benin
+4e8cda	Bhutan
+b0f143	Bolivia
+4e97da	Bosnia/Herz
+cfa5b4	Botswana
+e0f143	Brazil
+df4879	Brunei
+594fd9	Bulgaria
+a5cfbd	Burkina Faso
+5b4eda	Burma
+bea6ce	Burundi
+4ddb6c	Belarus
+be4ddb	Cambodia
+a4c4d0	Cameroon
+44f0df	Canada
+a5bdcf	Cent Af Rep
+d0cca4	Chad
+52ef45	Chile
+50d867	China
+f539fb	Colombia
+a5a9cf	Congo
+3cf9eb	Costa Rica
+4dbedb	Croatia
+38fc9f	Cuba
+de49db	Cyprus
+dbbb59	Czech Repub
+c4d0a4	Djibouti
+ad39fb	Dominican Rp
+f1b943	Ecuador
+d0baa4	Egypt
+aeff35	El Salvador
+a5b6cf	Eq Guinea
+cad0a4	Eritrea
+72de56	Estonia
+c1a6ce	Ethiopia
+7045ef	Finland
+f18943	Fr Guiana
+ee46c8	France
+a5aecf	Gabon
+bada4e	Georgia
+ed4768	Germany
+a6ceb3	Ghana
+744ddb	Greece
+44c6f0	Greenland
+ffd735	Guatemala
+b1cfa5	Guinea
+b7cfa5	GuineaBissau
+ff3581	Guyana
+6539fb	Haiti
+72ff35	Honduras
+4ddbcd	Hungary
+4396f1	Iceland
+50d8c0	India
+db4dc6	Indonesia
+d9ba4f	Iran
+e44388	Iraq
+af45ef	Ireland
+94d94f	Israel
+4eafda	Italy
+a6cea9	Ivory Coast
+3869fc	Jamaica
+50d8ab	Japan
+e4439f	Jordan
+da604e	Kazakhstan
+caa6ce	Kenya
+51d779	Korea D P Rp
+51d78a	Korea Rep
+a2d94f	Kuwait
+daa24e	Kyrgyzstan
+8c4ddb	Laos
+9ddd57	Latvia
+e344ac	Lebanon
+bdbdb7	Lesotho
+a8cfa5	Liberia
+d0b6a4	Libya
+bbdb59	Lithuania
+db7a59	Luxembourg
+4e51da	Macedonia
+b8babc	Madagascar
+cfa5c1	Malawi
+dd4a9b	Malaysia
+d0c1a4	Mali
+d0bfa4	Mauritania
+f47353	Mexico
+4ddba9	Moldova
+c06549	Mongolia
+4e91da	Montenegro
+d0a4a4	Morocco
+cfa5be	Mozambique
+cfa5b9	Namibia
+4fafd9	Nepal
+d645ef	Netherlands
+cf8d58	New Zealand
+37fd46	Nicaragua
+d0c7a4	Niger
+a4cad0	Nigeria
+4570ef	Norway
+71da4e	Oman
+55da4e	Pakistan
+37a9fd	Panama
+cf7958	Papua N Guin
+43f162	Paraguay
+f0d744	Peru
+dbd159	Poland
+db6700	Portugal
+cb39fb	Puerto Rico
+86d94f	Qatar
+4ddbbe	Romania
+4fd959	Russia
+b4a5cf	Rwanda
+97da4e	Saudi Arabia
+bbcfa5	Senegal
+4e6dda	Serbia
+abcfa5	Sierra Leone
+4dd8db	Slovakia
+4ac7dd	Slovenia
+c5a6ce	Somalia
+cfa5a9	South Africa
+8b4513	Spain
+50c7d8	Sri Lanka
+cfd0a4	Sudan
+f15943	Suriname
+babcb8	Swaziland
+5245ef	Sweden
+db9459	Switzerland
+e245ab	Syria
+dc4bad	Taiwan
+d9784f	Tajikistan
+cda5cf	Tanzania
+714eda	Thailand
+d0b0a4	Tunisia
+a64add	Turkey
+da714e	Turkmenistan
+afa6ce	Uganda
+9245ef	UK
+4ddb89	Ukraine
+7bda4e	Untd Arab Em
+43f196	Uruguay
+ec0000	US
+da664e	Uzbekistan
+fc38c1	Venezuela
+a24ddb	Vietnam
+d0bca4	W Sahara
+66da4e	Yemen
+a9a5cf	Zaire
+cfa5c6	Zambia
+cfa5ae	Zimbabwe

@@ -1,0 +1,12 @@
+Dyn Vizualization Project
+
+	What statistics are available?
+		How will we get the data?
+		When will the data be sent to the display?
+		
+	How should the information look?
+		Size, altitude, color, transparency, etc
+			
+	What hardware do we need to purchase to run this thing?
+		Monitor?  Tv?
+		Processor, Video card...
