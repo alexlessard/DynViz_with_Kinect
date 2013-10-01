@@ -1,0 +1,1 @@
+mvn org.apache.maven.plugins:maven-install-plugin:2.3:install-file -DcreateChecksum=false -Dpackaging=jar -Dfile=%1 -DgroupId=%2 -DartifactId=%3 -Dversion=%4 -DlocalRepositoryPath=repo -Dclassifier=%5

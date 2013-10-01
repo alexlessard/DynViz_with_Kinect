@@ -1,0 +1,165 @@
+001:Afganistan
+002:Albania
+003:Angola
+004:Argentina
+005:Armenia
+006:Australia
+007:Austria
+008:Azerbaijan
+009:Bahamas
+010:Bangladesh
+011:Belarus
+012:Belgium
+013:Belize
+014:Benin
+015:Bermuda
+016:Bhutan
+017:Bolivia
+018:BOSNIA AND HERZEGOVINA
+019:Botswana
+020:Brazil
+021:Bulgaria
+022:Burkina faso
+023:Burundi
+024:Cambodia
+025:Cameroon
+026:Canada
+027:Cayman islands
+028:Central african republic
+029:Chad
+030:Chile
+031:China
+032:Columbia
+033:Congo
+034:Congo democ repub
+035:Costa Rica
+036:COTE D'IVOIRE
+037:Croatia
+038:Cuba
+039:Cyprus
+040:Czech republic
+041:Denmark
+042:Djibouti
+043:Dominican republic
+044:Ecuador
+045:Egypt
+046:EL Salvador
+047:EQUATORIAL GUINEA
+048:Eritrea
+049:Estonia
+050:Ethiopia
+051:Faroe islands
+052:Finland
+053:France
+054:Gabon
+055:Gambia
+056:Georgia
+057:Germany
+058:Ghana
+059:Greece
+060:Greenland
+061:Guatemala
+062:Guinea
+063:GUINEA
+064:Guyana
+065:Haiti
+066:Honduras
+067:Hungary
+068:Iceland
+069:India
+070:Indonesia
+071:Iran
+072:Iraq
+073:Ireland
+074:Israel
+075:Italy
+076:Jamaica
+077:Japan
+078:Jordan
+079:Kazakhstan
+080:Kenya
+081:Kuwait
+082:Kyrgyzstan
+083:LAO
+084:Latvia
+085:Lebanon
+086:Lesotho
+087:Liberia
+088:Libya
+089:Lithuania
+090:Macedonia
+091:Madagascar
+092:Malawi
+093:Malaysia
+094:Mali
+095:Mauritania
+096:Mauritius
+097:Mexico
+098:Moldova
+099:Mongolia
+100:Montenegro
+101:Mozambique
+102:Myanmar
+103:Namibia
+104:Nepal
+105:Netherlands
+106:New zeland
+107:Nicaragua
+108:Niger
+109:Nigeria
+110:North Korea
+111:Norway
+112:Oman
+113:Pakistan
+114:Palestine
+115:Panama
+116:Papua new guinea
+117:Paraguay
+118:Peru
+119:Philippines
+120:Poland
+121:Portugal
+122:Romania
+123:Russia
+124:Rwanda
+125:Saudi arabia
+126:Senegal
+127:Serbia
+128:Sierra leone
+129:Singapore
+130:Slovakia
+131:Slovenia
+132:Somali
+133:South africa
+134:South korea
+135:Spain
+136:Sri lanka
+137:Sudan
+138:Suriname
+139:Swaziland
+140:Sweden
+141:Switzerland
+142:SYRIAN ARAB REPUBLIC
+143:Taiwan
+144:Tajikistan
+145:Tanzania
+146:Thailand
+147:TIMOR
+148:Togo
+149:Tunisia
+150:Turkey
+151:Turkmenistan
+152:TURKS AND CAICOS ISLANDS
+153:Uganda
+154:Ukraine
+155:United arab emirates
+156:United kingdom
+157:Uruguay
+158:USA
+159:Uzbekistan
+160:Venezuela
+161:Viet nam
+162:Western sahara
+163:Yemen
+164:Zambia
+165:Zimbabwe

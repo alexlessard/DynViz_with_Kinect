@@ -1,0 +1,101 @@
+North Bergen NJ, US
+ewr
+40.731970
+-74.174184
+#BDD7E7
+
+Ashburn VA, US
+iad
+39.051631
+-77.483151
+#6BAED6
+
+Miami FL, US
+mia
+25.782648
+-80.193157
+#3182BD
+
+Chicago IL, US
+ord
+41.884150
+-87.632409
+#9E9AC8
+
+Dallas TX, US
+dfw
+32.800325
+-96.820064
+#756BB1
+
+Seattle WA, US
+sea
+47.614343
+-122.338507
+#74C476
+
+Palo Alto CA, US
+pao
+37.444660
+-122.160794
+#31A354
+
+Los Angeles CA, US
+lax
+34.053490
+-118.245319
+#006D2C
+
+London, UK
+lon
+51.500152
+-0.126236
+#FCAE91
+
+Amsterdam, NL
+ams
+52.373120
+4.893195
+#FB6A4A
+
+Frankfurt, DE
+fra
+50.111512
+8.680506
+#DE2D26
+
+Warsaw, PL
+waw
+52.165833
+20.967222
+#A50F15
+
+Tokyo, JP
+tyo
+35.670479
+139.740921
+#FA9FB5
+
+Hong Kong, HK
+hkg
+22.396428
+114.109497
+#F768A1
+
+Singapore, SG
+sin
+1.352083
+103.819836
+#DD3497
+
+Sydney, AU
+syd
+-33.920581
+151.188056
+#AE017E
+
+Sao Paulo, BRAZIL
+sao
+-23.435556
+-46.473056
+#FFD92F

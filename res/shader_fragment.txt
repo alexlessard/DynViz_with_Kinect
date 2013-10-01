@@ -1,0 +1,163 @@
+//#extension GL_EXT_gpu_shader2 : enable
+//#extension GL_EXT_gpu_shader4 : enable
+
+const float _pW =	0.4/2500.0;
+const float _2pW =	0.9/2500.0;
+const float _3pW =	1.4/2500.0;
+
+const float _pH =	0.4/1250.0;
+const float _2pH =	0.9/1250.0;
+const float _3pH =	1.4/1250.0;
+
+uniform sampler1D countryColor;
+uniform sampler2D globeTex;
+uniform sampler2D countryMap;
+uniform sampler2D bordersTex;
+
+uniform float UseBlur;
+uniform float ShowBorders;
+uniform vec4 BordersColor;
+
+varying float LightIntensity;
+
+uniform float CountryMode;
+uniform float CountriesCount;
+
+uniform vec4 SelectionColor;
+uniform float SelectedCountry;
+
+uniform vec4 HighlightColor;
+uniform float HighlightOne;
+
+
+
+vec4 getNeighb(float dx, float dy, float comp);
+
+void main(void) {
+
+
+	//ok, here we get colors for globe
+	vec4 globeColor = vec4(texture2D(globeTex, gl_TexCoord[0].st));
+
+
+/*	2px bluring table indices
+	15	16	17	18	19
+	14	6	4	7	20
+	13	1	0	2	21
+	12	5	3	8	22
+	11	10	9	24	23
+*/
+
+
+/*	3px bluring table indices
+	34	35	36	37	38	39	40
+	33	15	16	17	18	19	41
+	32	14	6	4	7	20	42
+	31	13	1	0	2	21	43
+	30	12	5	3	8	22	44
+	29	11	10	9	24	23	45
+	28	27	26	25	48	47	46
+*/
+
+	vec4 retC = vec4(0);
+	//Bluring
+	if (UseBlur > 0.5) {
+		/*0*/	retC += getNeighb(0.0,		0.0,	0.2505000);
+		/*1*/	retC += getNeighb(-_pW,		0.0,	0.1140300);
+		/*2*/	retC += getNeighb( _pW,		0.0,	0.1140300);
+		/*3*/	retC += getNeighb(0.0,		-_pH,	0.1140300);
+		/*4*/	retC += getNeighb(0.0,		_pH,	0.1140300);
+		/*5*/	retC += getNeighb(-_pW,		-_pH,	0.0519100);
+		/*6*/	retC += getNeighb(-_pW,		_pH,	0.0519100);
+		/*7*/	retC += getNeighb( _pW,		_pH,	0.0519100);
+		/*8*/	retC += getNeighb( _pW,		-_pH,	0.0519100);
+		/*9*/	retC += getNeighb( 0.0,		-_2pH,	0.0107600);
+		/*10*/	retC += getNeighb(-_pW,		-_2pH,	0.0049000);
+		/*11*/	retC += getNeighb(-_2pW,	-_2pH,	0.0004600);
+		/*12*/	retC += getNeighb(-_2pW,	-_pH,	0.0049000);
+		/*13*/	retC += getNeighb(-_2pW,	0.0,	0.0107600);
+		/*14*/	retC += getNeighb(-_2pW,	_pH,	0.0049000);
+		/*15*/	retC += getNeighb(-_2pW,	_2pH,	0.0004600);
+		/*16*/	retC += getNeighb(-_pW,		_2pH,	0.0049000);
+		/*17*/	retC += getNeighb(0.0,		_2pH,	0.0107600);
+		/*18*/	retC += getNeighb(_pW,		_2pH,	0.0049000);
+		/*19*/	retC += getNeighb(_2pW,		_2pH,	0.0004600);
+		/*20*/	retC += getNeighb(_2pW,		_pH,	0.0049000);
+		/*21*/	retC += getNeighb(_2pW,		0.0,	0.0107600);
+		/*22*/	retC += getNeighb(_2pW,		-_pH,	0.0049000);
+		/*23*/	retC += getNeighb(_2pW,		-_2pH,	0.0004600);
+		/*24*/	retC += getNeighb(_pW,		-_2pH,	0.0049000);
+		/*25*/	retC += getNeighb(0.0,		-_3pH,	0.0002100);
+		/*26*/	retC += getNeighb(-_pW,		-_3pH,	0.0001000);
+		/*27*/	retC += getNeighb(-_2pW,	-_3pH,	0.0000100);
+		/*28*/	retC += getNeighb(-_3pW,	-_3pH,	0.0000000);
+		/*29*/	retC += getNeighb(-_3pW,	-_2pH,	0.0000100);
+		/*30*/	retC += getNeighb(-_3pW,	-_pH,	0.0001000);
+		/*31*/	retC += getNeighb(-_3pW,	0.0,	0.0002100);
+		/*32*/	retC += getNeighb(-_3pW,	_pH,	0.0001000);
+		/*33*/	retC += getNeighb(-_3pW,	_2pH,	0.0000100);
+		/*34*/	retC += getNeighb(-_3pW,	_3pH,	0.0000000);
+		/*35*/	retC += getNeighb(-_2pW,	_3pH,	0.0000100);
+		/*36*/	retC += getNeighb(-_pW,		_3pH,	0.0001000);
+		/*37*/	retC += getNeighb(0.0,		_3pH,	0.0002100);
+		/*38*/	retC += getNeighb(_pW,		_3pH,	0.0001000);
+		/*39*/	retC += getNeighb(_2pW,		_3pH,	0.0000100);
+		/*40*/	retC += getNeighb(_3pW,		_3pH,	0.0000000);
+		/*41*/	retC += getNeighb(_3pW,		_2pH,	0.0000100);
+		/*42*/	retC += getNeighb(_3pW,		_pH,	0.0001000);
+		/*43*/	retC += getNeighb(_3pW,		0.0,	0.0002100);
+		/*44*/	retC += getNeighb(_3pW,		-_pH,	0.0001000);
+		/*45*/	retC += getNeighb(_3pW,		-_2pH,	0.0000100);
+		/*46*/	retC += getNeighb(_3pW,		-_3pH,	0.0000000);
+		/*47*/	retC += getNeighb(_2pW,		-_3pH,	0.0000100);
+		/*48*/	retC += getNeighb(_pW,		-_3pH,	0.0001000);
+	}
+
+	retC = clamp (retC, 0.0, 1.0);
+
+	//mixing globe and countries. if no countries - just globe
+	retC = mix(globeColor, retC, retC.w-0.7);
+
+	vec4 bM = texture2D(bordersTex, gl_TexCoord[0].st);
+	vec4 brd = vec4(BordersColor.xyz * vec3(bM.g), bM.a);
+	retC = mix(retC, brd, brd.a * ShowBorders);
+	// Lighting
+	retC.xyz *= LightIntensity;
+	gl_FragColor = retC;
+}
+
+
+vec4 getNeighb(float dx, float dy, float comp) {
+	vec2 cp = texture2D(countryMap, gl_TexCoord[0].st + vec2(dx, dy)).yz;
+	// Unpack countryID
+	/*
+	genType round(genType x)
+	*/
+	cp.x = float(int(float(CountriesCount)*float(cp.x)));
+
+	// Country color
+	/*
+	gvec4 texelFetch(	gsampler1D  	sampler,
+ 						int  	P,
+ 						int  	lod);
+	vec4 cClr = texelFetch(countryColor, int(cp.x), 0)*vec4(CountryMode);
+	*/
+	vec4 cClr = texture1D(countryColor, cp.x)*vec4(CountryMode);
+	// SelectionColor
+	float useIt = 0.0;
+	useIt = clamp(float(cp.x == SelectedCountry)-CountryMode, 0.0, 1.0);
+	vec4 sClr = SelectionColor*useIt;
+	sClr.w = useIt;
+	// HighlightColor
+	useIt = 0.0;
+	useIt = float(cp.x == HighlightOne);
+	vec4 hClr = HighlightColor*useIt;
+	hClr.w = useIt;
+	useIt = CountryMode+hClr.w+sClr.w;
+	// Mixing output
+	vec4 ret = vec4(mix(mix(cClr.xyz, sClr.xyz, sClr.w), hClr.xyz, hClr.w), 1.0);
+	
+	ret *= cp.y*comp;
+	
+	return ret;
+}
